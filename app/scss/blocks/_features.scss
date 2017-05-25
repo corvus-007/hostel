@@ -1,0 +1,40 @@
+.features {
+  background-color: $secondary-color-3;
+}
+
+.features__list {
+  @include clear-list();
+  @include make-row();
+}
+
+.features__item {
+  margin-bottom: $grid-gutter-width;
+  text-align: center;
+  font-size: rem($font-size--small);
+
+  @include media-breakpoint-up(sm) {
+    margin-bottom: ($grid-gutter-width * 2);
+  }
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: ($grid-gutter-width * 3);
+  }
+}
+
+.features__icon {
+
+}
+
+.features__caption {
+  display: block;
+  margin: 0;
+  font-weight: 700;
+}
+
+.features__more-link {
+  border-bottom: 1px solid;
+}
+
+.features__footer {
+  text-align: center;
+}

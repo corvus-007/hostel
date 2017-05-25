@@ -1,0 +1,28 @@
+.logo {
+
+}
+
+.logo__link {
+  display: flex;
+  align-items: center;
+}
+
+.logo__image {
+  margin-right: 12px;
+}
+
+.logo__text {
+
+}
+
+.logo__name {
+  display: block;
+  font-family: $secondary-font;
+  line-height: 1;
+}
+
+.logo__desc {
+  display: block;
+  font-size: rem($font-size--small);
+  color: $secondary-color;
+}

@@ -1,0 +1,108 @@
+.welcome {
+  position: relative;
+  color: #fff;
+  background-color: $dark-color;
+  background: $dark-color url("images/bg-welcome.jpg") no-repeat center 80% / cover;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $dark-color;
+    opacity: 0.5;
+  }
+
+  @media #{$retina} {
+    background-image: url("images/bg-welcome@2x.jpg");
+  }
+}
+
+.welcome__inner {
+  @include make-container();
+
+  position: relative;
+  padding-top: ($grid-gutter-width * 8);
+  padding-bottom: ($grid-gutter-width * 4);
+  text-align: center;
+}
+
+.welcome__title {
+  max-width: 600px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: rem(52);
+  line-height: 1.2;
+  font-family: $secondary-font;
+
+  span {
+    display: block;
+  }
+}
+
+.welcome__metro-stations-list {
+  @include clear-list();
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: $grid-gutter-width;
+}
+
+.welcome__metro-station {
+  margin-right: ($grid-gutter-width * 1.5);
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &::before {
+    content: "";
+    position: relative;
+    top: 5px;
+    display: block;
+    width: 27px;
+    height: 32px;
+    margin-right: ($grid-gutter-width / 2);
+    background: url("images/icon-metro.png") no-repeat center / contain;
+
+    @media #{$retina} {
+      background-image: url("images/icon-metro@2x.png");
+    }
+  }
+}
+
+.welcome__price {
+  margin-bottom: $grid-gutter-width;
+  font-weight: 700;
+  font-size: rem(41);
+
+  span {
+    color: #01ba8e;
+  }
+}
+
+.welcome__actions {
+
+}
+
+.welcome__button {
+  @include createButton();
+}
+
+.welcome__button--gallery {
+  @include createButtonColors();
+}
+
+.welcome__button--booking {
+  @include createButtonColorsGreen();
+}

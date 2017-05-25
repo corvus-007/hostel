@@ -1,0 +1,61 @@
+// Colors
+$base-color: #1e1e1e;
+$accent-color: #faae23;
+$primary-color: #875;
+$secondary-color: #c5b7c5;
+$secondary-color-2: #ffefd4;
+$secondary-color-3: #fdf6eb;
+
+$white-color: #ffffff;
+$dark-color: #2f2a30;
+$green-color: #7ce3b9;
+$blue-color: #019b9f;
+$red-color: #e62228;
+
+$success-color: #02c683;
+$info-color: #b9dfff;
+$warning-color: #edf512;
+$danger-color: #fd0d4d;
+
+$light-color: #e4e4e4;
+$muted-color: #8f8f8f;
+$link-color: $accent-color;
+
+
+// Fonts
+$font-size: 18px;
+$font-size--small: 15px;
+$font-size--large: 24px;
+$primary-font: "Akrobat", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$secondary-font: "noteworthy", "Brush Script MT", cursive;
+
+
+$duration: 0.22s;
+
+
+// Grid
+$grid-columns: 12;
+$grid-gutter-width: 20px;
+
+// Media querys
+$xs-width: 0;
+$sm-width: 568px;
+$md-width: 768px;
+$lg-width: 992px;
+$xl-width: 1200px;
+$retina: "(min-resolution: 144dpi), (min-resolution: 1.5dppx)";
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 568px,
+  md: 768px,
+  lg: 992px,
+  xl: 1280px
+);
+
+$grid-max-widths: (
+  sm: none,
+  md: 720px,
+  lg: 960px,
+  xl: 1000px
+);

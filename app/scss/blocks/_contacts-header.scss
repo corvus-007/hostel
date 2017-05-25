@@ -1,0 +1,22 @@
+.contacts-header {
+  text-align: right;
+}
+
+.contacts-header__phones {
+  font-size: rem(24);
+  font-weight: 600;
+  color: $secondary-color;
+
+  a {
+    color: $secondary-color;
+    border-bottom: none;
+  }
+
+  span {
+    color: $secondary-color-2;
+  }
+}
+
+.contacts-header__callback {
+  @include dotted-link();
+}

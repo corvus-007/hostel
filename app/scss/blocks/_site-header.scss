@@ -1,0 +1,19 @@
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  max-width: 100%;
+}
+
+.site-header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: $grid-gutter-width ($grid-gutter-width * 2);
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}

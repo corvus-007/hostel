@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Главная - Хостел</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="homepage">
+  <div class="site-wrapper">
+    @@include('blocks/site-header.html')
+    <div class="welcome">
+      <div class="welcome__inner">
+        <h1 class="welcome__title">
+          <span>Уютный хостел</span>
+          в самом центре Москвы
+        </h1>
+        <ul class="welcome__metro-stations-list">
+          <li class="welcome__metro-station">
+            Пушкинская
+          </li>
+          <li class="welcome__metro-station">
+            Кузнецкий мост
+          </li>
+          <li class="welcome__metro-station">
+            Охотный ряд
+          </li>
+          <li class="welcome__metro-station">
+            Трубная
+          </li>
+        </ul>
+        <div class="welcome__price">
+          от <span>400</span> руб./сутки
+        </div>
+        <div class="welcome__actions">
+          <a class="welcome__button welcome__button--gallery" href="#">Посмотреть фотографии</a>
+          <a class="welcome__button welcome__button--booking" href="#">Забронировать номер</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta">
+      <div class="cta__inner">
+        <div class="cta__header">
+          <b class="cta__title">Оставь заявку на консультацию</b>
+          <p class="cta__subtitle">Успей до <mark>19 апреля</mark> и получи скидку 10% на проживание!</p>
+        </div>
+        <div class="cta__body">
+          <a class="cta__button" href="#">Оставить заявку сейчас</a>
+        </div>
+        <div class="cta__footer">
+          <p>Помните! Заполнение и отправка заявки вас ни к чему не обязывает, вы сможете просто проконсультироваться и, при желании, воспользоваться нашей услугой.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about">
+      <div class="about__image">
+        <img src="http://placehold.it/640x430/77c/fff" alt="">
+      </div>
+      <div class="about__inner">
+        <div class="about__text">
+          <strong class="about__title">
+            Хостел “Уютная компания” находится всего в 1,5 км. от Красной Площади.
+          </strong>
+          <p>Мы предлагаем уникальные условия проживания: возврат в случае съезда, аренда койко-места или номера и прочее.</p>
+          <p>Наш профессионализм и качество подтверждается рекомендацией группы компаний “101 Отель”.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="section gallery">
+      <div class="section__header">
+        <h2 class="section__title">Фотографии интерьера</h2>
+        <p class="section__subtitle">У нас чисто и уютно. Ждем вас в гости!</p>
+      </div>
+      <div class="section__body">
+        <div class='tabs js-gallery-tabs'>
+          <ul class='tabs__menu'>
+            <li class="tabs__menu-item">
+              <a class="tabs__menu-link" href="#tab-1">Общее размещение</a>
+            </li>
+            <li class="tabs__menu-item">
+              <a class="tabs__menu-link" href="#tab-2">Женское размещение</a>
+            </li>
+            <li class="tabs__menu-item">
+              <a class="tabs__menu-link" href="#tab-3">Индивидуально для пар</a>
+            </li>
+          </ul>
+          <div class="tabs__pane" id='tab-1'>
+            <div class="container">
+              <h3 class="visuallyhidden">Общее размещение</h3>
+              <div class="gallery__intro">
+                <p><b>Общее размещение</b> — далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Парадигматическая, своих ему. Запятых толку реторический, рекламных залетают безопасную даже.</p>
+              </div>
+            </div>
+            <div class="gallery-slider">
+              <div class="gallery-slider__item">
+                <a data-fancybox="gallery1" data-type="image" href="http://placehold.it/800x600/77c/fff"><img src="http://placehold.it/407x272/77c/fff" alt=""></a>
+              </div>
+              <div class="gallery-slider__item">
+                <a data-fancybox="gallery1" data-type="image" href="http://placehold.it/800x600/7dc/fff"><img src="http://placehold.it/407x272/7dc/fff" alt=""></a>
+              </div>
+              <div class="gallery-slider__item">
+                <a data-fancybox="gallery1" data-type="image" href="http://placehold.it/800x600/c7d/fff"><img src="http://placehold.it/407x272/c7d/fff" alt=""></a>
+              </div>
+              <div class="gallery-slider__item">
+                <a data-fancybox="gallery1" data-type="image" href="http://placehold.it/800x600/37d/fff"><img src="http://placehold.it/407x272/37d/fff" alt=""></a>
+              </div>
+              <div class="gallery-slider__item">
+                <a data-fancybox="gallery1" data-type="image" href="http://placehold.it/800x600/3d7/fff"><img src="http://placehold.it/407x272/3d7/fff" alt=""></a>
+              </div>
+              <div class="gallery-slider__item">
+                <a data-fancybox="gallery1" data-type="image" href="http://placehold.it/800x600/d37/fff"><img src="http://placehold.it/407x272/d37/fff" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__pane" id='tab-2'>
+            <div class="container">
+              <h3 class="visuallyhidden">Женское размещение</h3>
+              <div class="gallery__intro">
+                <p><b>Женское размещение</b> — далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Парадигматическая, своих ему. Запятых толку реторический, рекламных залетают безопасную даже.</p>
+              </div>
+            </div>
+            <div class="gallery-slider">
+              <div class="gallery-slider__item">
+                <a data-fancybox="gallery2" data-type="image" href="http://placehold.it/800x600/7c7/fff"><img src="http://placehold.it/407x272/7c7/fff" alt=""></a>
+              </div>
+              <div class="gallery-slider__item">
+                <a data-fancybox="gallery2" data-type="image" href="http://placehold.it/800x600/7cd/fff"><img src="http://placehold.it/407x272/7cd/fff" alt=""></a>
+              </div>
+              <div class="gallery-slider__item">
+                <a data-fancybox="gallery2" data-type="image" href="http://placehold.it/800x600/cd7/fff"><img src="http://placehold.it/407x272/cd7/fff" alt=""></a>
+              </div>
+              <div class="gallery-slider__item">
+                <a data-fancybox="gallery2" data-type="image" href="http://placehold.it/800x600/3d7/fff"><img src="http://placehold.it/407x272/3d7/fff" alt=""></a>
+              </div>
+              <div class="gallery-slider__item">
+                <a data-fancybox="gallery2" data-type="image" href="http://placehold.it/800x600/37d/fff"><img src="http://placehold.it/407x272/37d/fff" alt=""></a>
+              </div>
+              <div class="gallery-slider__item">
+                <a data-fancybox="gallery2" data-type="image" href="http://placehold.it/800x600/d73/fff"><img src="http://placehold.it/407x272/d73/fff" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__pane" id='tab-3'>
+            <div class="container">
+              <h3 class="visuallyhidden">Индивидуально для пар</h3>
+              <div class="gallery__intro">
+                <p><b>Индивидуально для пар</b> — далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Парадигматическая, своих ему. Запятых толку реторический, рекламных залетают безопасную даже.</p>
+              </div>
+            </div>
+            <div class="gallery-slider">
+              <div class="gallery-slider__item">
+                <a data-fancybox="gallery3" data-type="image" href="http://placehold.it/800x600/77c/fff"><img src="http://placehold.it/407x272/77c/fff" alt=""></a>
+              </div>
+              <div class="gallery-slider__item">
+                <a data-fancybox="gallery3" data-type="image" href="http://placehold.it/800x600/d7c/fff"><img src="http://placehold.it/407x272/d7c/fff" alt=""></a>
+              </div>
+              <div class="gallery-slider__item">
+                <a data-fancybox="gallery3" data-type="image" href="http://placehold.it/800x600/7cd/fff"><img src="http://placehold.it/407x272/7cd/fff" alt=""></a>
+              </div>
+              <div class="gallery-slider__item">
+                <a data-fancybox="gallery3" data-type="image" href="http://placehold.it/800x600/73d/fff"><img src="http://placehold.it/407x272/73d/fff" alt=""></a>
+              </div>
+              <div class="gallery-slider__item">
+                <a data-fancybox="gallery3" data-type="image" href="http://placehold.it/800x600/d37/fff"><img src="http://placehold.it/407x272/d37/fff" alt=""></a>
+              </div>
+              <div class="gallery-slider__item">
+                <a data-fancybox="gallery3" data-type="image" href="http://placehold.it/800x600/3d7/fff"><img src="http://placehold.it/407x272/3d7/fff" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features">
+      <div class="section__header">
+        <h2 class="section__title">Особенности проживания</h2>
+        <p class="section__subtitle">Коротко о том, что мы предлагаем для вас</p>
+      </div>
+      <div class="section__body container">
+        <ul class="features__list">
+          <li class="features__item col-6 col-sm-3 col-md-2">
+            <svg class="features__icon" width="64" height="64">
+              <use xlink:href="images/symbols.svg#bunk"></use>
+            </svg>
+            <b class="features__caption">Спальные места</b>
+            <a class="features__more-link" data-fancybox="features" href="#feature-1">Подробнее</a>
+          </li>
+          <li class="features__item col-6 col-sm-3 col-md-2">
+            <svg class="features__icon" width="64" height="64">
+              <use xlink:href="images/symbols.svg#towel"></use>
+            </svg>
+            <b class="features__caption">Стирка одежды</b>
+            <a class="features__more-link" data-fancybox="features" href="#feature-2">Подробнее</a>
+          </li>
+          <li class="features__item col-6 col-sm-3 col-md-2">
+            <svg class="features__icon" width="64" height="64">
+              <use xlink:href="images/symbols.svg#meal"></use>
+            </svg>
+            <b class="features__caption">Приготовление еды</b>
+            <a class="features__more-link" data-fancybox="features" href="#feature-3">Подробнее</a>
+          </li>
+          <li class="features__item col-6 col-sm-3 col-md-2">
+            <svg class="features__icon" width="64" height="64">
+              <use xlink:href="images/symbols.svg#slippers"></use>
+            </svg>
+            <b class="features__caption">Замена белья</b>
+            <a class="features__more-link" data-fancybox="features" href="#feature-4">Подробнее</a>
+          </li>
+          <li class="features__item col-6 col-sm-3 col-md-2">
+            <svg class="features__icon" width="64" height="64">
+              <use xlink:href="images/symbols.svg#bathtub"></use>
+            </svg>
+            <b class="features__caption">Ванные комнаты</b>
+            <a class="features__more-link" data-fancybox="features" href="#feature-5">Подробнее</a>
+          </li>
+          <li class="features__item col-6 col-sm-3 col-md-2">
+            <svg class="features__icon" width="64" height="64">
+              <use xlink:href="images/symbols.svg#room-key-2"></use>
+            </svg>
+            <b class="features__caption">Типы номеров</b>
+            <a class="features__more-link" data-fancybox="features" href="#feature-6">Подробнее</a>
+          </li>
+          <li class="features__item col-6 col-sm-3 col-md-2">
+            <svg class="features__icon" width="64" height="64">
+              <use xlink:href="images/symbols.svg#wifi"></use>
+            </svg>
+            <b class="features__caption">Доступ в интернет</b>
+            <a class="features__more-link" data-fancybox="features" href="#feature-7">Подробнее</a>
+          </li>
+          <li class="features__item col-6 col-sm-3 col-md-2">
+            <svg class="features__icon" width="64" height="64">
+              <use xlink:href="images/symbols.svg#cocktail"></use>
+            </svg>
+            <b class="features__caption">Спиртные напитки</b>
+            <a class="features__more-link" data-fancybox="features" href="#feature-8">Подробнее</a>
+          </li>
+          <li class="features__item col-6 col-sm-3 col-md-2">
+            <svg class="features__icon" width="64" height="64">
+              <use xlink:href="images/symbols.svg#cctv"></use>
+            </svg>
+            <b class="features__caption">Видеонаблюдение</b>
+            <a class="features__more-link" data-fancybox="features" href="#feature-9">Подробнее</a>
+          </li>
+          <li class="features__item col-6 col-sm-3 col-md-2">
+            <svg class="features__icon" width="64" height="64">
+              <use xlink:href="images/symbols.svg#safebox"></use>
+            </svg>
+            <b class="features__caption">Камеры хранения</b>
+            <a class="features__more-link" data-fancybox="features" href="#feature-10">Подробнее</a>
+          </li>
+          <li class="features__item col-6 col-sm-3 col-md-2">
+            <svg class="features__icon" width="64" height="64">
+              <use xlink:href="images/symbols.svg#television"></use>
+            </svg>
+            <b class="features__caption">Комната отдыха</b>
+            <a class="features__more-link" data-fancybox="features" href="#feature-11">Подробнее</a>
+          </li>
+          <li class="features__item col-6 col-sm-3 col-md-2">
+            <svg class="features__icon" width="64" height="64">
+              <use xlink:href="images/symbols.svg#information"></use>
+            </svg>
+            <b class="features__caption">Цены на проживание</b>
+            <a class="features__more-link" data-fancybox="features" href="#feature-12">Подробнее</a>
+          </li>
+        </ul>
+      </div>
+      <div class="section__footer features__footer container">
+        <a class="features__button button button--green" href="#">Забронировать номер</a>
+      </div>
+    </section>
+
+    <section class="section reviews">
+      <div class="section__header">
+        <h2 class="section__title">Отзывы наших посетителей</h2>
+        <p class="section__subtitle">Зачем хвалить себя самим, если есть клиенты?</p>
+      </div>
+      <div class="section__body container">
+
+      </div>
+    </section>
+
+    <div class="cta cta--green">
+      <div class="cta__inner">
+        <div class="cta__header">
+          <b class="cta__title">Оставь заявку на консультацию</b>
+          <p class="cta__subtitle">Успей до <mark>19 апреля</mark> и получи скидку 10% на проживание!</p>
+        </div>
+        <div class="cta__body">
+          <a class="cta__button" href="#">Оставить заявку сейчас</a>
+        </div>
+        <div class="cta__footer">
+          <p>Помните! Заполнение и отправка заявки вас ни к чему не обязывает, вы сможете просто проконсультироваться и, при желании, воспользоваться нашей услугой.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="section improvements">
+      <div class="section__header">
+        <h2 class="section__title">Всё ещё сомневаетесь?</h2>
+        <p class="section__subtitle">Давайте мы развеем последнюю неуверенность!</p>
+      </div>
+      <div class="section__body container">
+        <ul class="improvements__list">
+          <li class="improvements__item col-6 col-sm-4 col-lg-3">
+            <svg class="improvements__icon" width="64" height="64">
+              <use xlink:href="images/symbols.svg#checked"></use>
+            </svg>
+            <b class="improvements__caption">Возвращаем остаток</b>
+            <p class="improvements__description">
+              Если вы решили съехать раньше предполагаемого срока, мы вернем вам остаток денег.
+            </p>
+          </li>
+          <li class="improvements__item col-6 col-sm-4 col-lg-3">
+            <svg class="improvements__icon" width="64" height="64">
+              <use xlink:href="images/symbols.svg#checked"></use>
+            </svg>
+            <b class="improvements__caption">Работаем без посредников</b>
+            <p class="improvements__description">
+              Все койко-места в нашем хостеле сдаются без участия посредников или агентов.
+            </p>
+          </li>
+          <li class="improvements__item col-6 col-sm-4 col-lg-3">
+            <svg class="improvements__icon" width="64" height="64">
+              <use xlink:href="images/symbols.svg#checked"></use>
+            </svg>
+            <b class="improvements__caption">Нет комиссии и залогов</b>
+            <p class="improvements__description">
+              Мы не берем с вас залог и не расчитываем комиссию. Отдыхайте с комфортом!
+            </p>
+          </li>
+          <li class="improvements__item col-6 col-sm-4 col-lg-3">
+            <svg class="improvements__icon" width="64" height="64">
+              <use xlink:href="images/symbols.svg#checked"></use>
+            </svg>
+            <b class="improvements__caption">Можно платить частями</b>
+            <p class="improvements__description">
+              Прямо сейчас у вас нет нужной суммы? Вы можете сделать оплату частично!
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="section__footer improvements__footer container">
+        <a class="improvements__button button button--green" href="#">Забронировать номер</a>
+      </div>
+    </section>
+    @@include('blocks/site-footer.html')
+  </div>
+  <div class="feature-popup" id="feature-1" hidden>
+    <svg class="feature-popup__icon" width="82" height="82">
+      <use xlink:href="images/symbols.svg#bunk"></use>
+    </svg>
+    <h3 class="feature-popup__title">Спальные места</h3>
+    <div class="feature-popup__description">
+      <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Лучше возвращайся прямо использовало но океана жизни знаках текстов, грустный.</p>
+    </div>
+  </div>
+  <div class="feature-popup" id="feature-2" hidden>
+    <svg class="feature-popup__icon" width="82" height="82">
+      <use xlink:href="images/symbols.svg#towel"></use>
+    </svg>
+    <h3 class="feature-popup__title">Стирка одежды</h3>
+    <div class="feature-popup__description">
+      <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Лучше возвращайся прямо использовало но океана жизни знаках текстов, грустный.</p>
+    </div>
+  </div>
+  <div class="feature-popup" id="feature-3" hidden>
+    <svg class="feature-popup__icon" width="82" height="82">
+      <use xlink:href="images/symbols.svg#meal"></use>
+    </svg>
+    <h3 class="feature-popup__title">Приготовление еды</h3>
+    <div class="feature-popup__description">
+      <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Лучше возвращайся прямо использовало но океана жизни знаках текстов, грустный.</p>
+    </div>
+  </div>
+  <div class="feature-popup" id="feature-4" hidden>
+    <svg class="feature-popup__icon" width="82" height="82">
+      <use xlink:href="images/symbols.svg#slippers"></use>
+    </svg>
+    <h3 class="feature-popup__title">Замена белья</h3>
+    <div class="feature-popup__description">
+      <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Лучше возвращайся прямо использовало но океана жизни знаках текстов, грустный.</p>
+    </div>
+  </div>
+  <div class="feature-popup" id="feature-5" hidden>
+    <svg class="feature-popup__icon" width="82" height="82">
+      <use xlink:href="images/symbols.svg#bathtub"></use>
+    </svg>
+    <h3 class="feature-popup__title">Ванные комнаты</h3>
+    <div class="feature-popup__description">
+      <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Лучше возвращайся прямо использовало но океана жизни знаках текстов, грустный.</p>
+    </div>
+  </div>
+  <div class="feature-popup" id="feature-6" hidden>
+    <svg class="feature-popup__icon" width="82" height="82">
+      <use xlink:href="images/symbols.svg#room-key-2"></use>
+    </svg>
+    <h3 class="feature-popup__title">Типы номеров</h3>
+    <div class="feature-popup__description">
+      <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Лучше возвращайся прямо использовало но океана жизни знаках текстов, грустный.</p>
+    </div>
+  </div>
+  <div class="feature-popup" id="feature-7" hidden>
+    <svg class="feature-popup__icon" width="82" height="82">
+      <use xlink:href="images/symbols.svg#wifi"></use>
+    </svg>
+    <h3 class="feature-popup__title">Доступ в интернет</h3>
+    <div class="feature-popup__description">
+      <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Лучше возвращайся прямо использовало но океана жизни знаках текстов, грустный.</p>
+    </div>
+  </div>
+  <div class="feature-popup" id="feature-8" hidden>
+    <svg class="feature-popup__icon" width="82" height="82">
+      <use xlink:href="images/symbols.svg#cocktail"></use>
+    </svg>
+    <h3 class="feature-popup__title">Спиртные напитки</h3>
+    <div class="feature-popup__description">
+      <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Лучше возвращайся прямо использовало но океана жизни знаках текстов, грустный.</p>
+    </div>
+  </div>
+  <div class="feature-popup" id="feature-9" hidden>
+    <svg class="feature-popup__icon" width="82" height="82">
+      <use xlink:href="images/symbols.svg#cctv"></use>
+    </svg>
+    <h3 class="feature-popup__title">Видеонаблюдение</h3>
+    <div class="feature-popup__description">
+      <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Лучше возвращайся прямо использовало но океана жизни знаках текстов, грустный.</p>
+    </div>
+  </div>
+  <div class="feature-popup" id="feature-10" hidden>
+    <svg class="feature-popup__icon" width="82" height="82">
+      <use xlink:href="images/symbols.svg#safebox"></use>
+    </svg>
+    <h3 class="feature-popup__title">Камеры хранения</h3>
+    <div class="feature-popup__description">
+      <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Лучше возвращайся прямо использовало но океана жизни знаках текстов, грустный.</p>
+    </div>
+  </div>
+  <div class="feature-popup" id="feature-11" hidden>
+    <svg class="feature-popup__icon" width="82" height="82">
+      <use xlink:href="images/symbols.svg#television"></use>
+    </svg>
+    <h3 class="feature-popup__title">Комната отдыха</h3>
+    <div class="feature-popup__description">
+      <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Лучше возвращайся прямо использовало но океана жизни знаках текстов, грустный.</p>
+    </div>
+  </div>
+  <div class="feature-popup" id="feature-12" hidden>
+    <svg class="feature-popup__icon" width="82" height="82">
+      <use xlink:href="images/symbols.svg#information"></use>
+    </svg>
+    <h3 class="feature-popup__title">Цены на проживание</h3>
+    <div class="feature-popup__description">
+      <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Лучше возвращайся прямо использовало но океана жизни знаках текстов, грустный.</p>
+    </div>
+  </div>
+  @@include('blocks/popup-callback.html')
+  @@include('blocks/site-scripts.html')
+</body>
+</html>

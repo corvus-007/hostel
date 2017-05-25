@@ -1,0 +1,75 @@
+.cta {
+
+  &--green {
+    background-color: $green-color;
+  }
+}
+
+.cta__inner {
+  @include make-container();
+
+  padding-top: ($grid-gutter-width * 2.5);
+  padding-bottom: ($grid-gutter-width * 2.5);
+  text-align: center;
+
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+}
+
+.cta__header {
+  font-family: $secondary-font;
+  margin-bottom: $grid-gutter-width;
+
+  @include media-breakpoint-up(lg) {
+    flex-grow: 1;
+    margin-right: ($grid-gutter-width * 3);
+  }
+}
+
+.cta__title {
+  display: block;
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-size: rem(36);
+  line-height: 1;
+}
+
+.cta__subtitle {
+  margin-bottom: 0;
+  font-size: rem($font-size--large);
+
+  mark {
+    color: $red-color;
+    background: none;
+  }
+}
+
+.cta__body {
+  margin-bottom: $grid-gutter-width;
+}
+
+.cta__button {
+  @include createButton();
+  @include createButtonLarge();
+  @include createButtonColorsRed();
+
+  @media (max-width: 479px) {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.cta--green .cta__button {
+  @include createButtonColorsBlue();
+}
+
+.cta__footer {
+  flex-basis: 100%;
+  font-size: $font-size--small;
+  color: $muted-color;
+}
