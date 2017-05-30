@@ -1,0 +1,80 @@
+.site-footer {
+  background-color: $dark-color;
+  color: $secondary-color;
+}
+
+.site-footer__row {
+  @include make-limit-width();
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--primary {
+    padding-top: $grid-gutter-width;
+    padding-bottom: $grid-gutter-width;
+  }
+
+  &--secondary {
+    padding-top: ($grid-gutter-width / 2);
+    padding-bottom: ($grid-gutter-width / 2);
+    background-color: $base-color;
+    font-size: $font-size--small;
+  }
+
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.site-footer__column {
+  margin-bottom: $grid-gutter-width;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 0;
+    margin-right: ($grid-gutter-width / 2);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+
+.site-footer__copy {
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.site-footer__developer {
+  margin-bottom: 0;
+
+  span {
+    display: inline-block;
+    color: $danger-color;
+    animation: heartbeat 2.2s infinite;
+  }
+
+  a {
+
+    // &:hover {
+    //   color: $accent-color;
+    // }
+  }
+}
+
+@keyframes heartbeat {
+  0%, 40%, 80%, 100% {
+    transform: scale(.8);
+  }
+  20%, 60% {
+    transform: scale(1);
+  }
+}
+

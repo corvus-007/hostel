@@ -4,7 +4,7 @@
   text-align: center;
   font-family: inherit;
   font-size: rem($font-size);
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
   line-height: normal;
@@ -58,18 +58,18 @@
   }
 }
 
-@mixin createButtonColorsRed() {
+@mixin createButtonColorsOranges() {
   color: $white-color;
-  background-color: $red-color;
+  background-color: $accent-color;
 
   &:hover,
   &:focus {
     color: $white-color;
-    background-color: mix($white-color, $red-color, 15%);
+    background-color: $link-color--hover;
   }
 
   &:active {
-    background-color: mix($dark-color, $red-color, 15%);
+    background-color: #ec6400;
   }
 }
 
@@ -104,8 +104,8 @@
     @include createButtonColorsGreen();
   }
 
-  &--red {
-    @include createButtonColorsRed();
+  &--orange {
+    @include createButtonColorsOranges();
   }
 }
 

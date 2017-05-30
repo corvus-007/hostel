@@ -3,5 +3,35 @@
 }
 
 .gallery__intro {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 
+.gallery__price {
+  margin-bottom: 1em;
+}
+
+.gallery__price-list {
+  @include clear-list();
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery__price-item {
+  margin-right: ($grid-gutter-width * 2);
+  font-weight: 600;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.gallery__price-icon {
+  margin-right: 0.5em;
+  vertical-align: middle;
+  color: $accent-color;
 }

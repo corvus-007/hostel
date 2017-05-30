@@ -19,30 +19,43 @@
 }
 
 .form-control {
-  padding: em(14, 18) em(24, 18);
+  padding: rem(14) 0;
   width: 100%;
   outline: none;
-  border: 3px solid transparent;
-  background: #edeef1;
+  border: none;
+  border-bottom: 3px solid $secondary-color;
+  background: transparent;
   font: inherit;
-  font-size: rem(18);
+  font-size: rem($font-size);
+  // color: $white-color;
   line-height: normal;
   box-sizing: border-box;
-  transition: 0.3s;
+  transition: $duration;
+
+  &:hover {
+    // padding-left: ($grid-gutter-width / 2);
+    // padding-right: ($grid-gutter-width / 2);
+    // color: $base-color;
+    // border-color: $light-color;
+    border-color: currentColor;
+  }
+
+  &:focus {
+    // padding-left: ($grid-gutter-width / 2);
+    // padding-right: ($grid-gutter-width / 2);
+    // border-color: $light-color;
+    border-color: currentColor;
+  }
+
+  &::placeholder {
+    color: $muted-color;
+    opacity: 1;
+  }
 }
 
 textarea.form-control {
   max-height: 200px;
   resize: vertical;
-}
-
-.form-control:hover {
-  background: #f9f9f9;
-}
-
-.form-control:focus {
-  border-color: mix(#000, #e3e3e1, 7%);
-  background: #fff;
 }
 
 .form-submit-wrapper {

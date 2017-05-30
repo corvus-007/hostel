@@ -1,6 +1,7 @@
 // Colors
 $base-color: #1e1e1e;
 $accent-color: #faae23;
+$accent-color-2: #ff7e00;
 $primary-color: #875;
 $secondary-color: #c5b7c5;
 $secondary-color-2: #ffefd4;
@@ -10,6 +11,7 @@ $white-color: #ffffff;
 $dark-color: #2f2a30;
 $green-color: #7ce3b9;
 $blue-color: #019b9f;
+$yellow-color: #fda31c;
 $red-color: #e62228;
 
 $success-color: #02c683;
@@ -17,14 +19,16 @@ $info-color: #b9dfff;
 $warning-color: #edf512;
 $danger-color: #fd0d4d;
 
-$light-color: #e4e4e4;
+$light-color: #f5f5f5;
 $muted-color: #8f8f8f;
 $link-color: $accent-color;
+$link-color--hover: $accent-color-2;
 
 
 // Fonts
-$font-size: 18px;
+$font-size: 19px;
 $font-size--small: 15px;
+$font-size--smaller: 13px;
 $font-size--large: 24px;
 $primary-font: "Akrobat", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 $secondary-font: "noteworthy", "Brush Script MT", cursive;
@@ -42,7 +46,8 @@ $xs-width: 0;
 $sm-width: 568px;
 $md-width: 768px;
 $lg-width: 992px;
-$xl-width: 1200px;
+$xl-width: 1280px;
+$xxl-width: 1440px;
 $retina: "(min-resolution: 144dpi), (min-resolution: 1.5dppx)";
 
 $grid-breakpoints: (

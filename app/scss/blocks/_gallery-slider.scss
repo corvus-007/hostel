@@ -1,5 +1,5 @@
 .gallery-slider {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 
   .slick-dots {
     @include clear-list();
@@ -23,11 +23,12 @@
       display: block;
       padding: 0;
       overflow: hidden;
-      width: rem(13);
-      height: rem(13);
-      border: 2px solid $accent-color;
+      width: rem(15);
+      height: rem(15);
+      border: 3px solid transparent;
       text-indent: -1000px;
-      background: none;
+      background: $secondary-color;
+      background-clip: content-box;
       border-radius: 50%;
       outline: none;
       cursor: pointer;
@@ -36,7 +37,8 @@
 
     .slick-active button {
       cursor: default;
-      background: $accent-color;
+      border-color: $accent-color;
+      background: $white-color;
     }
   }
 
@@ -76,9 +78,11 @@
     }
 
     &.slick-disabled {
-      filter: brightness(100%) grayscale(100%);
+      background: $secondary-color;
       cursor: default;
-      opacity: 0.5;
+      &:hover {
+        filter: brightness(100%);
+      }
     }
   }
 
@@ -107,10 +111,13 @@
 }
 
 .gallery-slider__item {
-  position: relative;
-  overflow: hidden;
 
   a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border: none;
+
     &::before {
       content: "";
       position: absolute;
@@ -148,11 +155,6 @@
       opacity: 1;
       transform: scale(1);
     }
-  }
-
-  img {
-    width: 100%;
-    height: auto;
   }
 
   @include media-breakpoint-up(sm) {

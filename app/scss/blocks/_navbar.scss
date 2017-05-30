@@ -1,0 +1,27 @@
+.navbar {
+  position: relative;
+  z-index: 20;
+  background-color: rgba($dark-color, 0.9);
+  transition: background-color $duration;
+}
+
+.is-sticky .navbar {
+  left: 0;
+  right: 0;
+  background-color: rgba($dark-color, 1);
+}
+
+.navbar__inner {
+  @include make-limit-width();
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

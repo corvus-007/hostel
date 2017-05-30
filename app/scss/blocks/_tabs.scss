@@ -17,10 +17,10 @@
 
 .tabs__menu-item {
   text-align: center;
+  flex-grow: 1;
 
   @include media-breakpoint-up(sm) {
     margin-right: ($grid-gutter-width / 2);
-    flex-grow: 1;
 
     &:last-child {
       margin-right: 0;
@@ -39,9 +39,11 @@
   @include createButtonSmall();
 
   @include media-breakpoint-down(xs) {
+    display: block;
     padding-left: 4px;
     padding-right: 4px;
     font-size: rem(12);
+    border-radius: 0;
   }
 }
 

@@ -21,18 +21,37 @@
   }
 }
 
-.features__icon {
+.features__wrap-link {
+  display: block;
+  border: none;
+}
 
+.features__icon {
+  color: $base-color;
+  fill: currentColor;
+  transition: $duration;
+}
+
+.features__wrap-link:hover .features__icon,
+.features__wrap-link:focus .features__icon {
+  color: $link-color--hover;
 }
 
 .features__caption {
   display: block;
   margin: 0;
-  font-weight: 700;
+  font-weight: 600;
+  color: $base-color;
 }
 
 .features__more-link {
   border-bottom: 1px solid;
+  font-weight: 600;
+
+  &:focus {
+    outline: 1px dotted;
+    outline-offset: 2px;
+  }
 }
 
 .features__footer {

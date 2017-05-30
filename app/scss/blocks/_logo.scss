@@ -12,17 +12,16 @@
 }
 
 .logo__text {
-
+  line-height: 1;
 }
 
 .logo__name {
   display: block;
+  font-size: rem($font-size--large);
   font-family: $secondary-font;
-  line-height: 1;
 }
 
 .logo__desc {
   display: block;
-  font-size: rem($font-size--small);
   color: $secondary-color;
 }

@@ -1,0 +1,80 @@
+.faq {
+  background-color: $light-color;
+}
+
+.faq__list {
+
+  dt {
+    position: relative;
+    padding: ($grid-gutter-width / 2) $grid-gutter-width;
+    padding-right: ($grid-gutter-width * 3);
+    font-weight: 600;
+    font-size: rem(20);
+    line-height: 1.25;
+    border-bottom: 2px solid darken($secondary-color, 5%);
+    cursor: pointer;
+    background-color: $secondary-color;
+    transition: $duration;
+
+    &:hover {
+      background-color: darken($secondary-color, 2%);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: $grid-gutter-width;
+      width: 10px;
+      height: 10px;
+      margin: auto;
+      border: 1px solid;
+      box-sizing: border-box;
+      border-top: none;
+      border-left: none;
+      transform: rotate(45deg);
+      transition: $duration;
+    }
+  }
+
+  .is-opened {
+    background-color: darken($secondary-color, 4%);
+
+    &::before {
+      transform: rotate(45deg) scale(-1);
+    }
+  }
+
+  dd {
+    margin: 0;
+    margin-left: $grid-gutter-width / 2;
+    padding: $grid-gutter-width;
+    border-left: 5px solid darken($secondary-color, 5%);
+    background-color: lighten($secondary-color, 5%);
+
+    & > :first-child {
+      margin-top: 0;
+    }
+
+    & > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ul,
+  ol,
+  p {
+    margin-bottom: 0.5em;
+  }
+
+  a {
+
+  }
+
+  @include media-breakpoint-up(md) {
+    dt {
+      font-size: rem($font-size--large);
+    }
+  }
+}

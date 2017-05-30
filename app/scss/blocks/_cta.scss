@@ -1,15 +1,15 @@
 .cta {
 
   &--green {
-    background-color: $green-color;
+    background-color: #e9f0c5;
   }
 }
 
 .cta__inner {
   @include make-container();
 
-  padding-top: ($grid-gutter-width * 2.5);
-  padding-bottom: ($grid-gutter-width * 2.5);
+  padding-top: ($grid-gutter-width * 3);
+  padding-bottom: ($grid-gutter-width * 3);
   text-align: center;
 
   @include media-breakpoint-up(lg) {
@@ -32,7 +32,7 @@
 .cta__title {
   display: block;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: $grid-gutter-width;
   font-weight: normal;
   font-size: rem(36);
   line-height: 1;
@@ -55,7 +55,7 @@
 .cta__button {
   @include createButton();
   @include createButtonLarge();
-  @include createButtonColorsRed();
+  @include createButtonColorsOranges();
 
   @media (max-width: 479px) {
     width: 100%;
@@ -65,11 +65,15 @@
 }
 
 .cta--green .cta__button {
-  @include createButtonColorsBlue();
+  // @include createButtonColorsBlue();
 }
 
 .cta__footer {
   flex-basis: 100%;
   font-size: $font-size--small;
   color: $muted-color;
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
 }

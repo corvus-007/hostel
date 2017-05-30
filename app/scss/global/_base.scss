@@ -1,5 +1,9 @@
 html {
   font-size: $font-size;
+
+  @media (min-width: $xxl-width) {
+    font-size: ($font-size * 1.1);
+  }
 }
 
 body {
@@ -26,8 +30,13 @@ a {
   }
 
   &:hover {
-    color: mix(#000, $link-color, 10%);
+    color: $link-color--hover;
   }
+}
+
+b,
+strong {
+  font-weight: 600;
 }
 
 h1,
