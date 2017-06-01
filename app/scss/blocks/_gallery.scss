@@ -17,16 +17,30 @@
   @include clear-list();
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @include media-breakpoint-up(sm) {
+    flex-direction: row;
+  }
 }
 
 .gallery__price-item {
-  margin-right: ($grid-gutter-width * 2);
   font-weight: 600;
+  margin-bottom: ($grid-gutter-width);
+  width: 50%;
+  white-space: nowrap;
 
   &:last-child {
     margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  @include media-breakpoint-up(sm) {
+    width: auto;
+    margin-right: ($grid-gutter-width * 2);
+    margin-bottom: 0;
   }
 }
 

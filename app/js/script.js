@@ -7,6 +7,19 @@ document.addEventListener('DOMContentLoaded', function() {
   var navbar = document.querySelector('.navbar');
   var mainNav = document.querySelector('.main-nav');
   var toggleMenu = document.querySelector('.main-nav__toggle');
+  var windowPos = 0;
+  var windowHeight = document.documentElement.clientHeight;
+  var docHeight = $(document).height();
+  var aArray = $(mainNav).find('a[href^="#"]').map(function(index, elem) {
+    // return $(this).attr('href');
+    if (this.hash) {
+      return this.hash;
+    }
+  });
+  var aArrayLenght = aArray.length;
+  var theID = '';
+  var divPos = 0;
+  var divHeight = 0;
 
   mainNav.classList.remove('main-nav--no-js');
 
@@ -14,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
     toggleMenu.addEventListener('click', function(event) {
       event.preventDefault();
       mainNav.classList.toggle('main-nav--closed');
+      toggleMenu.classList.toggle('is-active');
     });
   }
 
@@ -21,6 +35,29 @@ document.addEventListener('DOMContentLoaded', function() {
     zIndex: 20
   });
 
+  $(mainNav).on('click', 'a[href^="#"]', function(event) {
+    var target = $(this.getAttribute('href'));
+    if (target.length) {
+      event.preventDefault();
+      $('html, body').stop().animate({
+        scrollTop: target.offset().top
+      }, 500);
+    }
+  });
+
+  $(window).scroll(function() {
+    windowPos = pageYOffset + 1;
+    for (var i = 0; i < aArrayLenght; i++) {
+      theID = aArray[i];
+      divPos = $(theID).offset().top;
+      divHeight = $(theID).height();
+      if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
+        $("a[href='" + theID + "']").closest('li').addClass("is-active");
+      } else {
+        $("a[href='" + theID + "']").closest('li').removeClass("is-active");
+      }
+    }
+  });
 
   /*=====  End of Main nav  ======*/
 
@@ -86,7 +123,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-
   $('.reviews-slider').slick({
     accessibility: false,
     dots: true,
@@ -119,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .not($(this))
         .removeClass('is-opened')
         .next('dd')
-          .slideUp();
+        .slideUp();
 
       if (!$(this).hasClass('is-opened')) {
         $(this).addClass('is-opened');
@@ -215,6 +251,8 @@ function init() {
     zoom: 15,
     controls: ["zoomControl", "fullscreenControl"]
   });
+
+  // myMap.behaviors.disable('drag');
 
   myMap.geoObjects.add(multARoute);
   myMap.geoObjects.add(multCRoute);

@@ -10,7 +10,11 @@
 }
 
 .documents-footer__item {
-  display: flex;
+
+}
+
+.documents-footer__link {
+  display: inline-flex;
   align-items: center;
   margin-bottom: 0.2em;
   font-size: $font-size--small;

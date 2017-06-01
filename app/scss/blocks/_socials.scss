@@ -1,6 +1,5 @@
 .socials {
   display: flex;
-  // justify-content: center;
   text-align: center;
 }
 
@@ -10,6 +9,12 @@
   text-decoration: none;
   margin-right: 0.7em;
   border: none;
+  transition: transform $duration;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
 
   &:last-child {
     margin-right: 0;

@@ -35,6 +35,16 @@ $secondary-font: "noteworthy", "Brush Script MT", cursive;
 
 
 $duration: 0.22s;
+$border-radius: 2px;
+
+// Hamburgers
+$hamburger-padding-x: 2px;
+$hamburger-padding-y: 2px;
+$hamburger-layer-width: 30px;
+$hamburger-layer-height: 3px;
+$hamburger-layer-border-radius: 2px;
+$hamburger-layer-color: $white-color;
+$hamburger-types: (slider);
 
 
 // Grid

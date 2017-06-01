@@ -57,3 +57,37 @@
 .features__footer {
   text-align: center;
 }
+
+.features__actions {
+  @include media-breakpoint-up(sm) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  @include media-breakpoint-up(md) {
+    justify-content: center;
+  }
+}
+
+.features__button {
+  width: 100%;
+  margin-bottom: $grid-gutter-width;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include media-breakpoint-up(sm) {
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  @include media-breakpoint-up(md) {
+    margin-right: $grid-gutter-width;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

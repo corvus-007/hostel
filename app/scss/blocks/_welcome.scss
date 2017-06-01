@@ -131,13 +131,17 @@
     justify-content: space-around;
     align-items: center;
   }
+
+  @include media-breakpoint-up(md) {
+    justify-content: center;
+  }
 }
 
 .welcome__button {
   @include createButton();
 
   width: 100%;
-  margin-bottom: ($grid-gutter-width);
+  margin-bottom: $grid-gutter-width;
 
   &:last-child {
     margin-bottom: 0;
@@ -146,6 +150,14 @@
   @include media-breakpoint-up(sm) {
     width: auto;
     margin-bottom: 0;
+  }
+
+  @include media-breakpoint-up(md) {
+    margin-right: $grid-gutter-width;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
