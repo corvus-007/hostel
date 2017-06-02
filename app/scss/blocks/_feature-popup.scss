@@ -1,13 +1,6 @@
 .feature-popup {
-  // max-height: 80vh;
   text-align: center;
   padding: $grid-gutter-width;
-  // display: flex;
-  // flex-direction: column;
-  // overflow: hidden;
-  // -webkit-user-drag: element;
-  // overflow-y: auto;
-  // -webkit-overflow-scrolling: touch;
 
   @include media-breakpoint-up(md) {
     padding: ($grid-gutter-width * 3);

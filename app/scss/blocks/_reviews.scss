@@ -80,6 +80,21 @@
   margin-bottom: $grid-gutter-width;
 }
 
+.reviews__message-mood {
+  padding-left: ($grid-gutter-width * 1.5);
+  background-repeat: no-repeat;
+  background-position: 0 5px;
+  background-size: 20px 20px;
+
+  &--plus {
+    background-image: url("images/circled-plus.svg");
+  }
+
+  &--minus {
+    background-image: url("images/circled-minus.svg");
+  }
+}
+
 .reviews__attachments {
 
 }
