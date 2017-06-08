@@ -66,6 +66,10 @@
 .about__text {
   line-height: 1.25;
 
+  & > :first-child {
+    margin-top: 0;
+  }
+
   & > :last-child {
     margin-bottom: 0;
   }
@@ -76,12 +80,4 @@
     box-sizing: border-box;
     padding-left: ($grid-gutter-width * 3);
   }
-}
-
-.about__title {
-  display: block;
-  margin: 0;
-  margin-bottom: 1rem;
-  font-weight: 600;
-  font-size: $font-size--large;
 }
