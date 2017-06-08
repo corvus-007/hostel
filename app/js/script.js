@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-
   var baseTemplateSlider = '<div class="fancybox-container" role="dialog" tabindex="-1">' +
     '<div class="fancybox-bg"></div>' +
     '<div class="fancybox-controls">' +
@@ -31,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
   var windowHeight = document.documentElement.clientHeight;
   var docHeight = $(document).height();
   var aArray = $(mainNav).find('a[href^="#"]').map(function(index, elem) {
-    // return $(this).attr('href');
     if (this.hash) {
       return this.hash;
     }
@@ -97,7 +95,6 @@ document.addEventListener('DOMContentLoaded', function() {
       accessibility: false,
       slidesToShow: 5,
       variableWidth: true,
-      // centerMode: true,
       responsive: [{
         breakpoint: 767,
         settings: {
@@ -107,7 +104,6 @@ document.addEventListener('DOMContentLoaded', function() {
         breakpoint: 567,
         settings: {
           slidesToShow: 1,
-          // arrows: false,
           variableWidth: false,
         }
       }]
@@ -123,14 +119,12 @@ document.addEventListener('DOMContentLoaded', function() {
     responsive: [{
       breakpoint: 1290,
       settings: {
-        slidesToShow: 3,
-        // slidesToScroll: 3,
+        slidesToShow: 3
       }
     }, {
       breakpoint: 567,
       settings: {
         slidesToShow: 1,
-        // slidesToScroll: 1,
         arrows: false
       }
     }]
@@ -192,7 +186,6 @@ document.addEventListener('DOMContentLoaded', function() {
         $(this).removeClass('is-opened');
         $(this).next('dd').stop().slideUp();
       }
-
 
       // $accordion.find('dd').not('.is-opened + dd');
     });
