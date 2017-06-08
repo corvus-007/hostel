@@ -12,6 +12,13 @@
   font-size: rem($font-size--small);
   text-align: center;
 
+  p {
+    max-width: 300px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @include media-breakpoint-up(sm) {
     margin-bottom: ($grid-gutter-width * 1);
   }
@@ -41,13 +48,6 @@
   }
 }
 
-.improvements__description {
-  max-width: 300px;
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .improvements__footer {
   margin-top: ($grid-gutter-width * 2);
   text-align: center;
@@ -73,5 +73,4 @@
       margin-right: 0;
     }
   }
-
 }
