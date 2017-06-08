@@ -7,13 +7,17 @@
 }
 
 .contacts-header__phones {
-  font-size: rem(24);
   font-weight: 600;
+  font-size: rem(24);
   color: $secondary-color;
 
   a {
     color: $secondary-color;
     border-bottom: none;
+
+    &:not(:last-child)::after {
+      content: ",";
+    }
   }
 
   span {

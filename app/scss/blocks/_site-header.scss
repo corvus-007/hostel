@@ -30,6 +30,7 @@
 
 .site-header__logo {
   margin-bottom: $grid-gutter-width;
+
   @include media-breakpoint-up(md) {
     margin-bottom: 0;
   }
@@ -37,6 +38,7 @@
 
 .site-header__contacts {
   margin-bottom: $grid-gutter-width;
+
   @include media-breakpoint-up(md) {
     margin-bottom: 0;
   }
