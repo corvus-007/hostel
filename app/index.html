@@ -38,8 +38,8 @@
           от <span>400</span> руб./сутки
         </div>
         <div class="welcome__actions">
-          <a class="welcome__button welcome__button--gallery" href="#">Посмотреть фотографии</a>
-          <a class="welcome__button welcome__button--booking" href="#">Забронировать номер</a>
+          <a class="welcome__button welcome__button--gallery" href="#gallery-section">Посмотреть фотографии</a>
+          <a class="welcome__button welcome__button--booking" data-fancybox href="#popup-booking">Забронировать номер</a>
         </div>
       </div>
       <div class="navbar">
@@ -114,7 +114,7 @@
           <p class="cta__subtitle">Успей до <mark>19 апреля</mark> и получи скидку 10% на проживание!</p>
         </div>
         <div class="cta__body">
-          <a class="cta__button" href="#">Оставить заявку сейчас</a>
+          <a class="cta__button" data-fancybox href="#popup-callback">Оставить заявку сейчас</a>
         </div>
         <div class="cta__footer">
           <p>Помните! Заполнение и отправка заявки вас ни к чему не обязывает, вы сможете просто проконсультироваться и, при желании, воспользоваться нашей услугой.</p>
@@ -434,7 +434,7 @@
       <div class="section__footer features__footer container">
         <div class="features__actions">
           <a class="features__button button button--orange" href="#">Скачать прайс-лист</a>
-          <a class="features__button button button--green" href="#">Забронировать номер</a>
+          <a class="features__button button button--green" data-fancybox href="#popup-booking">Забронировать номер</a>
         </div>
       </div>
     </section>
@@ -584,7 +584,7 @@
               </svg>
             </div>
             <h3 class="top-features__caption">Всегда чистые помещения</h3>
-            <p class="top-features__description">
+            <p>
               У нас всегда 4 раза в день проходит уборка не только всех номерах, но и во всем комплексе нашего хостела. А также, по возможности, вы можете попросить на ресепшене убраться в вашем номере.
             </p>
           </li>
@@ -595,7 +595,7 @@
               </svg>
             </div>
             <h3 class="top-features__caption">Полное отсуствие алкоголя</h3>
-            <p class="top-features__description">
+            <p>
               Мы категорически против распития алкоголя в нашем хостеле! Не допускается нахождение лиц в алкогольном опьянении на территроии хостела. Администратор в праве выселить постояльцев без компенсации денежных средств.
             </p>
           </li>
@@ -606,7 +606,7 @@
               </svg>
             </div>
             <h3 class="top-features__caption">Только приличные люди</h3>
-            <p class="top-features__description">
+            <p>
               Мы внимательно подходим к выбору своих гостей. У нас отдыхают только вежливыеи приличные люди, которые комфортно отдыхают сами и ценят комфорт окружающих.
             </p>
           </li>
@@ -621,7 +621,7 @@
           <p class="cta__subtitle">Успей до <mark>19 апреля</mark> и получи скидку 10% на проживание!</p>
         </div>
         <div class="cta__body">
-          <a class="cta__button" href="#">Оставить заявку сейчас</a>
+          <a class="cta__button" data-fancybox href="#popup-callback">Оставить заявку сейчас</a>
         </div>
         <div class="cta__footer">
           <p>Помните! Заполнение и отправка заявки вас ни к чему не обязывает, вы сможете просто проконсультироваться и, при желании, воспользоваться нашей услугой.</p>
@@ -693,7 +693,7 @@
         </ul>
       </div>
       <div class="section__footer improvements__footer container">
-        <a class="improvements__button button button--green" href="#">Забронировать номер</a>
+        <a class="improvements__button button button--green" data-fancybox href="#popup-booking">Забронировать номер</a>
       </div>
     </section>
 
@@ -763,24 +763,28 @@
         </div>
       </div>
       <div class="container">
-        <form class="contacts__form" action="" method="post">
-          <label class="form-item">
-            <span class="form-label visuallyhidden">Как к вам обращаться?</span>
-            <input class="form-control contacts__form-control" type="text" name="clientName" placeholder="Как к вам обращаться?">
-          </label>
-          <label class="form-item">
-            <span class="form-label visuallyhidden">Куда позвонить?</span>
-            <input class="form-control contacts__form-control" type="tel" name="clientPhone" placeholder="Куда позвонить?" required>
-          </label>
-          <label class="form-item">
-            <span class="form-label visuallyhidden">Текст сообщения</span>
-            <textarea class="form-control contacts__form-control" name="clientMessage" rows="4" placeholder="Текст сообщения" required></textarea>
-          </label>
-          <input type="text" class="form-submit button button--orange" value="Отправить сообщение">
-          <p class="contacts__frame-note">
-            Отправляя данные, вы соглашаетесь с <a href="#">Политикой&nbsp;конфиденциальности</a> этого сайта
-          </p>
-        </form>
+        <div class="contacts__form-wrapper">
+          <form class="contacts__form" action="" method="post">
+            <label class="form-item">
+              <span class="form-label visuallyhidden">Как к вам обращаться?</span>
+              <input class="form-control contacts__form-control" type="text" name="clientName" placeholder="Как к вам обращаться?">
+            </label>
+            <label class="form-item">
+              <span class="form-label visuallyhidden">Куда позвонить?</span>
+              <input class="form-control contacts__form-control" type="tel" name="clientPhone" placeholder="Куда позвонить?" required>
+            </label>
+            <label class="form-item">
+              <span class="form-label visuallyhidden">Текст сообщения</span>
+              <textarea class="form-control contacts__form-control" name="clientMessage" rows="4" placeholder="Текст сообщения" required></textarea>
+            </label>
+            <input type="text" class="form-submit button button--orange" value="Отправить сообщение">
+          </form>
+          <div class="contacts__note">
+            <p>
+              Отправляя данные, вы соглашаетесь с <a href="#" target="_blank">Политикой&nbsp;конфиденциальности</a> этого сайта
+            </p>
+          </div>
+        </div>
       </div>
     </section>
     @@include('blocks/site-footer.html')

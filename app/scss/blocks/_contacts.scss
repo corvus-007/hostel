@@ -50,10 +50,7 @@
 
 }
 
-.contacts__frame {
-}
-
-.contacts__form {
+.contacts__form-wrapper {
   position: relative;
   z-index: 2;
   padding-top: $grid-gutter-width;
@@ -71,11 +68,14 @@
   }
 }
 
+.contacts__form {
+}
+
 .contacts__form-control {
   color: $white-color;
 }
 
-.contacts__frame-note {
+.contacts__note {
   text-align: center;
   margin: 0;
   margin-top: ($grid-gutter-width / 1);
@@ -83,4 +83,8 @@
   margin-right: ($grid-gutter-width / 2);
   font-size: rem($font-size--smaller);
   color: $secondary-color;
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
 }

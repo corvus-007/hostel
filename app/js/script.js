@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
     zIndex: 20
   });
 
-  $(mainNav).on('click', 'a[href^="#"]', function(event) {
+  $(mainNav).on('click', 'a[href^="#"]:not([data-fancybox])', function(event) {
     var target = $(this.getAttribute('href'));
     if (target.length) {
       event.preventDefault();
@@ -186,8 +186,6 @@ document.addEventListener('DOMContentLoaded', function() {
         $(this).removeClass('is-opened');
         $(this).next('dd').stop().slideUp();
       }
-
-      // $accordion.find('dd').not('.is-opened + dd');
     });
   }
 
@@ -272,8 +270,6 @@ function init() {
     zoom: 15,
     controls: ["zoomControl", "fullscreenControl"]
   });
-
-  // myMap.behaviors.disable('drag');
 
   myMap.geoObjects.add(multARoute);
   myMap.geoObjects.add(multCRoute);
