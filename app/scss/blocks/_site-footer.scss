@@ -3,13 +3,20 @@
   color: $secondary-color;
 }
 
-.site-footer__row {
+.site-footer__inner {
   @include make-limit-width();
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.site-footer__row {
   &--primary {
     padding-top: $grid-gutter-width;
     padding-bottom: $grid-gutter-width;
@@ -20,11 +27,6 @@
     padding-bottom: ($grid-gutter-width / 2);
     background-color: $base-color;
     font-size: $font-size--small;
-  }
-
-  @include media-breakpoint-up(md) {
-    flex-direction: row;
-    justify-content: space-between;
   }
 }
 
